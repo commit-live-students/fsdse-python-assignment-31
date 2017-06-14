@@ -6,4 +6,9 @@ def solution(dic):
     '''
     Enter your code here
     '''
-    return list_of_combinations
+    my_list = []
+    for key in dic:
+        my_list.append(dic[key])
+
+    my_list.reverse()
+    return [''.join(w) for w in list(itertools.product(*my_list))]
