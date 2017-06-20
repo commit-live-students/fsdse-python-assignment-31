@@ -1,9 +1,17 @@
 import itertools
 
-
 def solution(dic):
-    list_of_combinations = []
     '''
     Enter your code here
     '''
-    return list_of_combinations
+    result = []
+    combinations = []
+    combinations = list(itertools.product(*dic.values()))
+    for i in combinations:
+        if i[0] < i[1]:
+            temp = i[0]+i[1]
+            result.append(temp)
+        else:
+            temp = i[1]+i[0]
+            result.append(temp)
+    return sorted(result)
