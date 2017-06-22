@@ -1,4 +1,4 @@
-import itertools
+
 def solution(dic):
     list_of_combinations = []
     dic1 = dic['one']
