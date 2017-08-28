@@ -21,8 +21,7 @@ def solution(dic):
     return list_of_combinations
 
 
-'''
-dic = {'one': ['a', 'b'], 'two': ['c', 'd']}
+
+dic = {'one': ['a', 'b'], 'two': ['c', 'd'], 'three': ['e', 'f']}
 a = solution(dic)
 print a
-'''
